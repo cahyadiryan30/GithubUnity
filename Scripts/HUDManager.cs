@@ -12,6 +12,7 @@ public class HUDManager : MonoBehaviour
     private float energy = 200;
 
     private float maxEnergy = 200;
+
     private float kecepatan;
     private float kecepatanLari;
 
@@ -68,7 +69,7 @@ public class HUDManager : MonoBehaviour
         string gameHours;
         string gameMinutes;
 
-        if(hours >= 0 && hours <10)
+        if(hours >= 0 && hours < 10)
         {
             gameHours = "0" + hours.ToString();
         }

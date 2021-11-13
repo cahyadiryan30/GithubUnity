@@ -11,6 +11,8 @@ public class Gerak_Player : MonoBehaviour
 
     //Lompat
     [SerializeField] private float speed_jump = 2f;
+    private float speed_jalan = 4f;
+    public float speed_lari = 7f;
 
     // Gravitasi
     private float gravitasi = 20f;
@@ -48,12 +50,12 @@ public class Gerak_Player : MonoBehaviour
         //Sprint
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            kecepatan = 7f;
+            kecepatan = speed_lari;
             Camera.main.fieldOfView = 50f;
         }
         else
         {
-            kecepatan = 4f;
+            kecepatan = speed_jalan;
             Camera.main.fieldOfView =40f;
         }
 
